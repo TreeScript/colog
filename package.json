@@ -1,38 +1,34 @@
 {
-    "name": "colog",
-    "version": "0.0.1",
-    "description": "Pretty colored loggin for Node & Browser consoles (MVP scaffold)",
-    "type": "module",
-    "main": "./dist/index.cjs",
-    "module": "./dist/index.js",
+    "name": "@treescript/colog",
+    "version": "0.1.1-dev",
+    "description": "Pretty console log formatter for Node & Browser",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/index.js",
+            "import": "./dist/index.mjs",
             "require": "./dist/index.cjs"
+        },
+        "./browser": {
+            "import": "./dist/index.browser.js"
         }
     },
-    "sideEffects": false,
-    "files": ["dist"],
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "tsup",
-        "dev": "tsup --watch",
-        "test": "vitest run",
-        "test:watch": "vitest",
-        "format": "prettier -w .",
-        "lint": "eslint .",
-        "prepublishOnly": "npm run build && npm run test"
+        "prepare": "npm run build"
     },
-    "engines": { "node": ">=18" },
-    "keywords": ["log", "pretty", "color", "console", "inspect"],
-    
-    "license": "MIT",
-    "devDependencies": {
-        "@types/node": "^24.5.2",
-        "eslint": "^9.36.0",
-        "prettier": "^3.6.2",
-        "tsup": "^8.5.0",
-        "typescript": "^5.9.2",
-        "vitest": "^3.2.4"
-    }
+    "keywords": [
+        "console",
+        "log",
+        "formatter",
+        "pretty",
+        "browser",
+        "node"
+    ],
+    "author": "moon",
+    "license": "MIT"
 }

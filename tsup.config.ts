@@ -1,7 +1,7 @@
 import { defineConfig } from "tsup"
 
 export default defineConfig({
-    entry: ["src/index.ts"],
+    entry: ["src/index.ts", "src/index.browser.ts"],
     format: ["esm", "cjs"],   // ESM + CJS 동시 지원
     dts: true,                // 타입 선언 출력
     sourcemap: true,

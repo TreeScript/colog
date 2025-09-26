@@ -19,10 +19,12 @@ yarn add @treescript/colog
 
 # 📦 Using pnpm
 pnpm add @treescript/colog
+
+```
+
 🔗 Install directly from GitHub
 ```
 
-```
 npm install github:treescript/colog
 ```
 ---

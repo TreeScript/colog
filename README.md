@@ -99,12 +99,12 @@ const data = {
 ```ts
 console.log(data)
 ```
-![]
+![Output](https://raw.githubusercontent.com/TreeScript/colog/refs/heads/main/assets/terminal-without.JPG)
 
 
 #### ➡️ Web Console (Client) Output
 
-![]
+![Output](https://raw.githubusercontent.com/TreeScript/colog/refs/heads/main/assets/web-without.JPG)
 
 ### ✅ With colog
 ### ➡️ Server Console (Terminal) Output - JSON Mode (default)
@@ -113,9 +113,9 @@ import colog from "@treescript/colog"
 
 colog(data)
 ```
-![]
+![Output](https://raw.githubusercontent.com/TreeScript/colog/refs/heads/main/assets/terminal-default.JPG)
 ### ➡️ Web Console (Client) Output - JSON Mode (default)
-![]
+![Output](https://raw.githubusercontent.com/TreeScript/colog/refs/heads/main/assets/wet-default.JPG)
 
 ---
 

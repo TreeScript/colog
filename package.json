@@ -1,6 +1,6 @@
 {
     "name": "@treescript/colog",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Pretty console log formatter for Node & Browser",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",

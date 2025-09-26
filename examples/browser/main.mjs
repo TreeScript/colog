@@ -1,22 +1,28 @@
 import colog from "../../dist/index.browser.js"
 
-const data = {
-    id: 1,
-    name: "moon",
-    nested: {
-        hello: "world",
-        arr: [1, 2, 3],
-        longArr: Array.from({ length: 30 }, (_, i) => i + 1),
-        users: Array.from({ length: 5 }, (_, i) => ({
-            id: i + 1,
-            username: `user_${i + 1}`,
-            email: `user${i + 1}@test.com`,
-        })),
+const _data = {
+    user: {
+      id: 33,
+      username: "moon_dev",
+      profile: {
+        nickname: "Moon",
+        avatarUrl: "https://example.com/avatar.png",
+        bio: "Full-stack developer & blogger",
+      },
     },
-}
+    posts: Array.from({ length: 3 }, (_, i) => ({
+      id: i + 1,
+      title: `Post ${i + 1} Title`,
+      content: `This is a sample content of post ${i + 1}.`,
+      tags: ["typescript", "nextjs", "colog"],
+      comments: Array.from({ length: 2 }, (_, j) => ({
+        id: j + 1,
+        author: `commenter_${j + 1}`,
+        message: `Comment ${j + 1} on post ${i + 1}`,
+        likes: Math.floor(Math.random() * 10),
+      })),
+    })),
+  }
 
-// 기본
-// colog(data, { view: "both" })
-// colog(data, { view: "tree" })
-
-colog(data)
+// default
+colog(_data)

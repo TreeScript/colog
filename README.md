@@ -22,7 +22,6 @@ pnpm add @treescript/colog
 🔗 Install directly from GitHub
 ```
 
-### 🔗 Install directly from GitHub
 ```
 npm install github:treescript/colog
 ```
@@ -45,7 +44,7 @@ colog({ nested: { hello: "world" } }, { view: "both" })
 // ⏱️ With timestamp
 colog({ id: 1 }, { time: true })
 ```
-브라우저 콘솔 / 서버 콘솔 모두 지원합니다.
+#### Works seamlessly in both browser and server (Node.js) consoles.
 
 ---
 ## ⚙️ Options

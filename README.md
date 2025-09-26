@@ -62,12 +62,6 @@ colog({ id: 1 }, { time: true })
 | **`headCount`**      | `number`                     | `48`     | Number of items to show at the start of a long array       |
 | **`tailCount`**      | `number`                     | `12`     | Number of items to show at the end of a long array       |
 
-## Example Using options
-```
-ts
-
-
-```
 ---
 
 ## 📖 Example Output
